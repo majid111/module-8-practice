@@ -3,17 +3,13 @@ img{
     width: 100%;
 }
 
-.imagecontainer1{
-    height: 400px;
-    margin-bottom: 5px;
-}
-.imagecontainer2{
+.imagecontainer{
     height: 400px;
     display: flex;
     margin-bottom: 5px;
     gap: 5px;
 }
-.imagecontainer2 div{
+.imagecontainer div{
     flex: 1;
 }
 .img-flex img{
@@ -24,4 +20,30 @@ img{
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(2, 2fr);
+}
+
+
+
+@media screen and
+(max-width : 376px) {
+    .imagecontainer{
+        flex-direction: column;
+        height: auto;
+    }  
+    .img-grid{
+        grid-template-columns:  1fr;  
+    }  
+    
+}
+
+@media screen and
+(min-width : 376px) and (max-width : 992px) {
+     .imagecontainer{
+        flex-direction: column;
+        height: auto;
+    }  
+    /* .img-grid{
+        grid-template-columns:  1fr;  
+    }   */ 
+    
 }

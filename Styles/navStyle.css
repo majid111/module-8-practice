@@ -20,3 +20,25 @@ nav ul a:hover{
     background-color: rgb(247, 151, 34);
     transform: scaleX(1.1rem);
 }
+
+@media screen and
+(max-width : 376px) {
+    
+    .navcontainer{
+        flex-direction: column;
+    }
+    nav ul li{
+        display: inline;
+    }
+    nav ul a{
+        padding: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and
+(min-width : 376px) and (max-width : 992px) {
+    .navcontainer{
+        flex-direction: column;
+    }
+}
